@@ -18,3 +18,6 @@ class Event(models.Model):
 
     def get_data_creation(self):
         return self.event_date.strftime('%d/%m/%Y %H:%Mhs')
+
+    def get_data_input_event(self):
+        return self.event_date.strftime('%Y-%m-%dT%H:%M')
